@@ -59,6 +59,25 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</Address></address>
+          <div>Soc link
+          <ul>
+            <li></li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -142,6 +161,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
                 src="./images/mark-guerrero-1.jpg"
                 alt="Mark Guerrero - Product Designer"
                 width="264"
@@ -183,6 +203,7 @@
             </li>
             <li class="team-item">
               <img
+               srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
                 src="./images/tom-ford-2.jpg"
                 alt="Tom Ford - Frontend Developer"
                 width="264"
@@ -224,6 +245,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/team/camila.jpg 1x, ./images/team/camila@2x.jpg 2x"
                 src="./images/camila-garcia-3.jpg"
                 alt="Camila Garcia - Marketing"
                 width="264"
@@ -265,6 +287,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/team/daniel.jpg 1x, ./images/team/daniel@2x.jpg 2x"
                 src="./images/daniel-wilson-4.jpg"
                 alt="Daniel Wilson - UI Designer"
                 width="264"
@@ -316,6 +339,7 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                  srcset="./images/portfolio/banking.jpg 1x, ./images/portfolio/banking@2x.jpg 2x"
                   src="./images/banking-app.jpg"
                   alt="Banking App screenshot"
                   class="portfolio-img"
@@ -336,6 +360,7 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                srcset="./images/portfolio/cashless.jpg 1x, ./images/portfolio/cashless@2x.jpg 2x"
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment App screenshot"
                   class="portfolio-img"
@@ -356,6 +381,8 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                srcset="./images/portfolio/meditation.jpg 1x, ./images/portfolio/meditation@2x.jpg 2x"
+                src="./images/portfolio/banking.jpg"
                   src="./images/meditation-app.jpg"
                   alt="Meditation App screenshot"
                   class="portfolio-img"
@@ -376,6 +403,7 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                srcset="./images/portfolio/taxi.jpg 1x, ./images/portfolio/taxi@2x.jpg 2x"
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service App screenshot"
                   class="portfolio-img"
@@ -396,6 +424,7 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                srcset="./images/portfolio/illustrations.jpg 1x, ./images/portfolio/illustrations@2x.jpg 2x"
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   class="portfolio-img"
@@ -416,6 +445,7 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
+                srcset="./images/portfolio/courses.jpg 1x, ./images/portfolio/courses@2x.jpg 2x"
                   src="./images/online-courses.jpg"
                   alt="Online Courses interface"
                   class="portfolio-img"
@@ -439,7 +469,7 @@
     </main>
 
     <!-- Site footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-logo-wrapper">
           <a href="./index.html" class="footer-logo">
@@ -506,9 +536,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal-windows">
-     
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
@@ -516,57 +545,57 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-       <form class="modal-form">
-        <div class="box-label-modal">
-          <label class="label-modal" for="user-name">Name</label>
-          <div class="box-input-modal">
-            <input
-              class="input-modal"
-              type="text"
-              id="user-name"
-              name="user-name"
-              required
-            />
-            <svg class="icon-modal" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+        <form class="modal-form">
+          <div class="box-label-modal">
+            <label class="label-modal" for="user-name">Name</label>
+            <div class="box-input-modal">
+              <input
+                class="input-modal"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="icon-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="box-label-modal">
-          <label class="label-modal" for="user-phone">Phone</label>
-          <div class="box-input-modal">
-            <input
-              class="input-modal"
-              type="tel"
-              id="user-phone"
-              name="user-phone"
-              required
-            />
-            <svg class="icon-modal" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="box-label-modal">
+            <label class="label-modal" for="user-phone">Phone</label>
+            <div class="box-input-modal">
+              <input
+                class="input-modal"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                required
+              />
+              <svg class="icon-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="box-label-modal">
-          <label class="label-modal" for="user-email">Email</label>
-          <div class="box-input-modal">
-            <input
-              class="input-modal"
-              type="email"
-              id="user-email"
-              name="user-email"
-              required
-            />
-            <svg class="icon-modal" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="box-label-modal">
+            <label class="label-modal" for="user-email">Email</label>
+            <div class="box-input-modal">
+              <input
+                class="input-modal"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+              />
+              <svg class="icon-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-        </div>
 
-        <div class="box-label-modal-comment">
-          <label class="label-modal" for="user-comment">Comment</label>
+          <div class="box-label-modal-comment">
+            <label class="label-modal" for="user-comment">Comment</label>
 
             <textarea
               class="input-modal textarea-modal"
@@ -576,36 +605,31 @@
               required
               rows="6"
             ></textarea>
-        
-        </div>
+          </div>
 
-        <div class="checkbox-wrapper">
-          <input
-            class="checkbox-input visually-hidden"
-            type="checkbox"
-            name="user-privacy"
-            id="user-privacy"
-            value="true"
-          />
-          <label class="privacy-label" 
-             for="user-privacy">
-            <span class="custom-checkbox">
-              <svg class="custom-checkbox-icon" 
-                 width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="privacy-link"
-                href="#">
-                Privacy Policy
-            </a>
-          </label>
-        </div>
-        <button class="send-button" type="submit">Send</button>
-      </form>
-    </div>
+          <div class="checkbox-wrapper">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="privacy-label" for="user-privacy">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#"> Privacy Policy </a>
+            </label>
+          </div>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
