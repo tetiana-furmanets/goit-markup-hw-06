@@ -244,6 +244,33 @@ button{
  cursor: pointer; 
 }
 
+.burger-icon {
+ width: 24px;
+ height: 2px;
+ background-color: #000;
+ position: relative;
+ display: inline-block;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+ content: "";
+ width: 24px;
+ height: 2px;
+ background-color: #000;
+ position: absolute;
+ left: 0;
+ transition: all 0.3s ease;
+}
+
+.burger-icon::before {
+ top: -8px;
+}
+
+.burger-icon::after {
+ top: 8px;
+}
+
 @media screen and (max-width: 767px) {
 .burger-btn {
  display: block; 
@@ -312,19 +339,23 @@ button{
  fill: #ffffff;   
 } 
 
+.mobile-menu-nav {
+ margin-bottom: auto;
+}
+
 .mobile-menu-list {
  display: flex;
  flex-direction: column;
  gap: 40px;
  margin-bottom: auto;
- }
-
- .mobile-menu-link {
- font-weight: 700;
  font-size: 36px;
  line-height: 1.1;
  color: #2E2F42;
  transition: color 250ms;
+ }
+
+ .mobile-menu-link {
+ 
  }
 
  .mobile-menu-link.current,
