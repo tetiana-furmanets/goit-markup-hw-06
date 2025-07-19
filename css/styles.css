@@ -371,7 +371,8 @@ button{
 
 .mobile-address-list {
  display: flex;
- gap: 40px;
+ gap: 24px;
+ flex-direction: column;
 }
 
 .mobile-tel {
@@ -389,7 +390,7 @@ button{
 }
 
 /* Соцмережі */
-.mobile-socials-list {
+.mobile-social-list {
  display: flex;
  flex-direction: row;
  gap: 40px;
