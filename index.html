@@ -67,16 +67,65 @@
         </button>
       </div>
 
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu is-open" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</Address></address>
-          <div>Soc link
-          <ul>
-            <li></li>
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li><a href="#studio" class="mobile-nav-link">Studio</a></li>
+              <li>
+                <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li><a href="#contacts" class="mobile-nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li>
+                <a href="tel:+110001111111" class="mobile-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="mobile-email"
+                  >info@example.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-link">
+              <a href="#"
+                ><svg class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-link">
+              <a href="#"
+                ><svg class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-link">
+              <a href="#"
+                ><svg class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-link">
+              <a href="#"
+                ><svg class="mobile-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
           </ul>
-          </div>
         </div>
       </div>
     </header>
@@ -203,7 +252,7 @@
             </li>
             <li class="team-item">
               <img
-               srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
+                srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
                 src="./images/tom-ford-2.jpg"
                 alt="Tom Ford - Frontend Developer"
                 width="264"
@@ -245,7 +294,10 @@
             </li>
             <li class="team-item">
               <img
-              srcset="./images/team/camila.jpg 1x, ./images/team/camila@2x.jpg 2x"
+                srcset="
+                  ./images/team/camila.jpg    1x,
+                  ./images/team/camila@2x.jpg 2x
+                "
                 src="./images/camila-garcia-3.jpg"
                 alt="Camila Garcia - Marketing"
                 width="264"
@@ -287,7 +339,10 @@
             </li>
             <li class="team-item">
               <img
-              srcset="./images/team/daniel.jpg 1x, ./images/team/daniel@2x.jpg 2x"
+                srcset="
+                  ./images/team/daniel.jpg    1x,
+                  ./images/team/daniel@2x.jpg 2x
+                "
                 src="./images/daniel-wilson-4.jpg"
                 alt="Daniel Wilson - UI Designer"
                 width="264"
@@ -339,7 +394,10 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  srcset="./images/portfolio/banking.jpg 1x, ./images/portfolio/banking@2x.jpg 2x"
+                  srcset="
+                    ./images/portfolio/banking.jpg    1x,
+                    ./images/portfolio/banking@2x.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="Banking App screenshot"
                   class="portfolio-img"
@@ -360,7 +418,10 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                srcset="./images/portfolio/cashless.jpg 1x, ./images/portfolio/cashless@2x.jpg 2x"
+                  srcset="
+                    ./images/portfolio/cashless.jpg    1x,
+                    ./images/portfolio/cashless@2x.jpg 2x
+                  "
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment App screenshot"
                   class="portfolio-img"
@@ -381,8 +442,11 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                srcset="./images/portfolio/meditation.jpg 1x, ./images/portfolio/meditation@2x.jpg 2x"
-                src="./images/portfolio/banking.jpg"
+                  srcset="
+                    ./images/portfolio/meditation.jpg    1x,
+                    ./images/portfolio/meditation@2x.jpg 2x
+                  "
+                  src="./images/portfolio/banking.jpg"
                   src="./images/meditation-app.jpg"
                   alt="Meditation App screenshot"
                   class="portfolio-img"
@@ -403,7 +467,10 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                srcset="./images/portfolio/taxi.jpg 1x, ./images/portfolio/taxi@2x.jpg 2x"
+                  srcset="
+                    ./images/portfolio/taxi.jpg    1x,
+                    ./images/portfolio/taxi@2x.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service App screenshot"
                   class="portfolio-img"
@@ -424,7 +491,10 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                srcset="./images/portfolio/illustrations.jpg 1x, ./images/portfolio/illustrations@2x.jpg 2x"
+                  srcset="
+                    ./images/portfolio/illustrations.jpg    1x,
+                    ./images/portfolio/illustrations@2x.jpg 2x
+                  "
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   class="portfolio-img"
@@ -445,7 +515,10 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                srcset="./images/portfolio/courses.jpg 1x, ./images/portfolio/courses@2x.jpg 2x"
+                  srcset="
+                    ./images/portfolio/courses.jpg    1x,
+                    ./images/portfolio/courses@2x.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   alt="Online Courses interface"
                   class="portfolio-img"
@@ -536,7 +609,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal-windows">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -621,8 +694,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="#"> Privacy Policy </a>
+              <span class="terms-text">
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="#"> Privacy Policy </a>
+              </span>
             </label>
           </div>
           <button class="send-button" type="submit">Send</button>
