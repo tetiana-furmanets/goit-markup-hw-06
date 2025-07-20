@@ -117,21 +117,14 @@ button{
 .logo-accent {
  color: #2e2f42;    
 }
-
-.burger-btn{
+.burger-btn {
  padding: 0;
  border: none;
- background-color: transparent;
-} 
-
-.berger-icon{
- display: block;
- fill:#2f2f37;
-}
+ background-color: transparent; } 
 
 @media screen and (min-width: 768px) {
  .burger-btn {
-    display: none; 
+ display: none; 
  } 
 
 .main-nav {
@@ -244,13 +237,6 @@ button{
  cursor: pointer; 
 }
 
-.burger-icon {
- width: 24px;
- height: 2px;
- background-color: #000;
- position: relative;
- display: inline-block;
-}
 
 .burger-icon::before,
 .burger-icon::after {
@@ -380,6 +366,7 @@ button{
  font-size: 20px;
  line-height: 1.1;
  color: #4D5AE5;
+ font-style: normal;
 }
 
 .mobile-email {
@@ -387,6 +374,7 @@ button{
  font-size: 20px;
  line-height: 1.1;
  color: #434455;
+ font-style: normal;
 }
 
 /* Соцмережі */
@@ -443,8 +431,9 @@ button{
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
+ display: flex;
 }
-
+ 
 .hero-title {
  font-size: 36px;
  line-height: 1.11;
@@ -468,7 +457,7 @@ button{
  letter-spacing: 0.04em;
  cursor: pointer;
  min-width: 169px;
- height: 56px; 
+ height: 56px;
  margin: 0 auto;
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -478,6 +467,17 @@ button{
  background-color: #404bbf;
 }
 
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
+.hero-section {
+ background-image:
+ linear-gradient(rgba(46, 47, 66, 0.7),
+                 rgba(46, 47, 66, 0.7)),
+ url("../images/hero/hero-background-mobile@2x.jpg");
+    } 
+}
+
+
 @media screen and (min-width: 768px) {
 .hero-section {
  padding: 112px 0;
@@ -485,19 +485,29 @@ button{
  rgba(46, 47, 66, 0.7)),
  url(../images/hero/hero-background-tablet.jpg);
 }
-
 .hero-title {
- font-size: 56px;
- line-height: 1.07;
- max-width: 496px;
- margin-bottom: 36px;
-    }
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
 }
 
 .hero-button {
     display: block;
     margin: 0 auto;
+} 
+ }
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+.hero-section {
+ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+ rgba(46, 47, 66, 0.7)),
+ url("../images/hero/hero-background-tablet@2x.jpg");
+    }
 }
+
+
 
 @media screen and (min-width: 1158px) {
 .hero-section {
@@ -506,19 +516,21 @@ button{
  rgba(46, 47, 66, 0.7)),
  url(../images/hero/hero-background-desktop.jpg);
 }
-}
 
 .hero-title {
-    margin: 0 auto 48px; }
+ margin: 0 auto 48px; 
+}
+}
 
-@media screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-.hero {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2) {
+.hero-section {
  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
  rgba(46, 47, 66, 0.7)),
- url(../images/hero/hero-background-desktop@2x.jpg);
+ url("../images/hero/hero-background-desktop@2x.jpg");
     }
 }
+
 
 
 /* advantages-section*/
@@ -721,7 +733,7 @@ screen and (min-resolution: 2dppx) {
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
 .team {
  padding: 120px 0;
  }
@@ -1157,9 +1169,6 @@ z-index: 1000;
  max-height: 90vh;
 }
 
-.backdrop:not(.is-open) .modal-form {
- transform: translate(-50%, -100%);
-}
 
 .modal-close-btn {
  position: absolute;
@@ -1214,7 +1223,6 @@ z-index: 1000;
 
 }
 
-
 .modal-title::after {
  content: "";
  position: absolute;
@@ -1229,13 +1237,10 @@ z-index: 1000;
  border-radius: 1px;
 }
 
-
 .modal-title:hover::after,
 .modal-title:focus::after {
  opacity: 1;
 }
-
-
 
 .box-label-modal {
  flex-direction: column;
@@ -1321,7 +1326,6 @@ z-index: 1000;
  line-height: 1.17;
  letter-spacing: 0.04em;
  color: #8e8f99;
- flex-wrap: wrap;
  align-items: center;
  gap: 8px;
  padding: 4px 8px;
@@ -1329,7 +1333,6 @@ z-index: 1000;
  border-radius: 4px;
  transition: border-color 250ms ease;
  cursor: pointer;
- white-space: nowrap;
 }
 
 .custom-checkbox {
@@ -1353,13 +1356,6 @@ z-index: 1000;
  background-color: #404bbf;
  fill: #f4f4fd;
  border: none;
-}
-
-.terms-text {
- display: flex;
- flex-direction: column;
- max-width: 100%;
- 
 }
 
 .privacy-link {
